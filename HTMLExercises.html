@@ -12,22 +12,40 @@
     </style>
 </head>
 <body>
+    <article>
+        <header>
+            <h1>This is a Header</h1>
+            <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </header>
+    </article>
+    <section>
     <h1>Links</h1>
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+    </section>
 
+
+    <section>
     <h1>Images</h1>
-    <img src="https://apod.nasa.gov/apod/image/2110/LucyLaunchB_Kraus_2048.jpg" height=400 alt="yeah">
+    <h2>Using "< figure >" Element and "< figcaption >"</figcaption></figure></h2>
+    <figure>
+        <img src="https://apod.nasa.gov/apod/image/2110/LucyLaunchB_Kraus_2048.jpg" height=400 alt="yeah">
+        <figcaption>This is a Random picture from the Internet.</figcaption>
+    </figure>
+    <br>
+    </section>
 
+    <section>
     <h1>Forms</h1>
+    <h2>With required, pattern, and minlenght Attributes.</h2>
     <form>
         <label for="username">Username: </label><br>
-        <input type="text" id="username" name="username"><br>
+        <input type="text" id="username" name="username" pattern="allsmallcaps" required><br>
         <label for="pwd">Password: </label><br>
-        <input type="password" id="pwd" name="pwd">
+        <input type="password" id="pwd" name="pwd" minlength="8" required>
 
         <p>Gender:</p>
         <input type="radio" id="male" name="gender" value="Male">
@@ -43,7 +61,10 @@
         <input type="button" onclick="alert('Succesfully Submitted!')" value="Submit">
 
     </form>
+    <br>
+    </section>
 
+    <section>
     <h1>Tables</h1>
     <table>
         <tr>
@@ -68,6 +89,43 @@
         </tr>
 
     </table>
+    <br>
+    </section>
+
+    <section>
+    <h1>Aduio and Video</h1>
+    <h3>Video</h3>
+    <video width="320" height="240" controls>
+        <source src="/less-10-seconds-memes-v1.ytmp4converter.com.mp4" type="video/mp4">
+    </video>
+    <br>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="/10 second short music.mp3" type="audio/mpeg">
+    </audio>
+    </section>
+
+    <section>
+    <h1>HTML "< nav >" Element</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#" title="Menu1">Sample Menu 1</a></li>
+            <li><a href="#" title="Menu2">Sample Menu 2</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" title="W3Schools">Open W3Schools</a></li>
+            <li><a href="https://www.google.com/" target="_blank" title="Google">Open Google</a></li>
+            <li><a href="/Resume.html" target="_blank" title="about">About the Author</a></li>
+        </ul>
+    </nav>
+    </section>
+
+    <article>
+        <footer>
+            <h1>This is a Footer</h1>
+            <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </footer>
+    </article>
 
     
 </body>
