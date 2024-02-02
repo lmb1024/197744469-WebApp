@@ -10,9 +10,45 @@
             border-collapse: collapse;
         }
     </style>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #6495ED;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #4961E1;
+            color: black;
+        }
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <a class="active" href="#">Top</a>
+        <a href="#header">Header</a>
+        <a href="#images">Images</a>
+        <a href="#forms">Forms</a>
+        <a href="#tables">Tables</a>
+        <a href="#audvid">Audio and Video</a>
+        <a href="#hyperlinks">Hyperlinks</a>
+        <a href="#footer">Footer</a>
+    </div>
     <article>
+        <script src="/greetings.js"></script>
+    </article>
+
+    <article id="header">
         <header>
             <h1>This is a Header</h1>
             <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
@@ -28,17 +64,17 @@
     </section>
 
 
-    <section>
+    <section id="images">
     <h1>Images</h1>
     <h2>Using "&lt; fgure >" Element and "&lt; figc@ption >"</h2>
     <figure>
-        <img src="https://apod.nasa.gov/apod/image/2110/LucyLaunchB_Kraus_2048.jpg" height=400 alt="yeah">
-        <figcaption>This is a Random picture from the Internet.</figcaption>
+        <img src="https://apod.nasa.gov/apod/image/2110/LucyLaunchB_Kraus_2048.jpg" alt="Rocket Launch Photo" height=400 alt="yeah">
+        <figcaption>Photo by <cite>John Kraus</cite></figcaption>
     </figure>
     <br>
     </section>
 
-    <section>
+    <section id="forms">
     <h1>Forms</h1>
     <h2>With required, pattern, and minlenght Attributes.</h2>
     <form>
@@ -64,7 +100,7 @@
     <br>
     </section>
 
-    <section>
+    <section id="tables">
     <h1>Tables</h1>
     <table>
         <tr>
@@ -92,8 +128,8 @@
     <br>
     </section>
 
-    <section>
-    <h1>Aduio and Video</h1>
+    <section id="audvid">
+    <h1>Audio and Video</h1>
     <h3>Video</h3>
     <video width="320" height="240" controls>
         <source src="https://github.com/lmb1024/197744469-WebApp/raw/main/less-10-seconds-memes-v1.ytmp4converter.com.mp4" type="video/mp4">
@@ -106,8 +142,8 @@
     </audio>
     </section>
 
-    <section>
-    <h1>HTML "&lt; nav >" Element</h1>
+    <section id="hyperlinks">
+    <h1><abbr title="HyperText Markup Language">HTML</abbr> "&lt; nav >" Element</h1>
 
     <nav>
         <ul>
@@ -120,7 +156,7 @@
     </nav>
     </section>
 
-    <article>
+    <article id="footer">
         <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
         <footer>
             <h1>This is a Footer</h1>
