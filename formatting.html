@@ -10,7 +10,8 @@
     <p>This highlights <abbr title="html">HTML</abbr> abbreviation </p>
     <p>"The way to get started is to quit talking and begin doing." <address>-<a href="https://en.wikipedia.org/wiki/Walt_Disney">Walt Disney</a></address></p>
     <p>This is a <b>BOLD</b> text</p>
-    <p>This <bdo dir="rtl">WORD</bdo> is inverted</p>
+    <p><br> This sentence is not inverted.</p>
+    <p><bdo dir="rtl">This sentence is inverted.</bdo> <br> </p>
     <p>This is a blockquot3 from The Walt Disney Company:</p>
     <blockquote cite="https://thewaltdisneycompany.com/about/">The mission of The Walt Disney Company is to entertain, 
         inform and inspire people around the globe through the power of 
@@ -19,6 +20,62 @@
     
     <p><cite>The Great Gatsby</cite> is a 1925 novel by American writer F. Scott Fitzgerald.</p>
     <p>the HTML <code>code</code> tag defines a Computer Code</p>
+    <p><br>The answer is <del>True</del> <ins>False.</ins></p>
+    <p><br><dfn title="World Wide Web">WWW </dfn>is a system of interconnected public webpages accessible through the Internet.</p>
+    <p><br> Try to <em>emphasize</em> your main idea so that readers will always know what your opinion is.</p>
+    <p><br> <i>Motorola </i> produced the first handheld mobile phone</p>
+    <p><br>Press <kbd>alt</kbd> + <kbd>tab</kbd> to switch to other open apps/tabs in your Taskbar.</p>
+    <p><br> Don't forget to do your <mark> assignments</mark> this weekend.</p>
+    
+    <label for="storage1">Storage 1: </label>
+    <meter id="storage1" value="45" min="0" max="100"> 45 out of 100</meter><br>
+    <label for="storage2">Storage 2: </label>
+    <meter id="storage2" value="69" min="0" max="100">69 out of 100</meter><br>
+
+    <pre>
+        This       preserves
+        both spaces               and
+
+
+        line breaks So you dont          need
+        to use <code>nbsp</code> 
+
+        and <code>br</code>.
+
+    </pre><br>
+    <label for="game">Loading:</label>
+    <progress id="game" value="78" max="100">78%</progress><br>
+    <p>Lewis Robinson said: <q>Keep Moving Forward.</q></p> <br>
+    <ruby>
+        漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+    </ruby><br>
+    <p><s>OPEN</s></p>
+    <p>CLOSED</p><br>
+    <p>Error message:</p>
+    <p><samp> Error: Attribute col-12 not allowed on element nav at this point</samp></p>
+    <br>
+    <p>This <small>word</small> is smaller than the others.</p>
+    <p><strong>This is a Warning!</strong></p>
+    <pre>
+        In English, <sup>superscript</sup> is commonly used to add references (for footnotes),
+         copyright or trademark symbols, and in equations for scientific and mathematical texts. 
+         <sub>Subscript</sub> is mainly reserved for chemical compounds.</pre>
+
+    <br>
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+        <h3>THIS IS A HIDDEN MESSAGE</h3>
+    </template>
+
+    <script>
+    function showContent() {
+        let temp = document.getElementsByTagName("template")[0];
+        let clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+    }
+    </script>
+    
     
 </body>
 </html>
