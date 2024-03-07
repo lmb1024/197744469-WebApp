@@ -1,0 +1,18 @@
+h1{
+    color: black;
+}
+h2{
+    color: blue;
+}
+h3{
+    color: aqua;
+}
+p{
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+ul{
+    padding: 50px 50px 50px 50px;
+}
